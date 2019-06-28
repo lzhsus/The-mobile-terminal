@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            width: 100%;height: 100%;overflow: hidden;
+        }
+        *{
+            padding: 0;margin: 0;list-style: none;
+        }
+        .box{
+            width: 100%;height: 100%;
+            box-sizing: border-box;
+            display: flex;flex-direction: column;
+        }
+        .head{
+            width: 100%;height: 80px;
+            line-height: 80px;text-align: center;
+            background: red;
+        }
+        .content{
+            width: 100%;height: 100%;
+            background: chartreuse;
+            display: flex;flex-direction: column;
+        }
+        .m{
+            width: 100%;height: 100%;
+        }
+        .foot{
+            width: 100%;height: 100px;
+            line-height: 80px;text-align: center;
+        }
+        .foot-box{
+            position: fixed;bottom: 0;left: 0;
+            width: 100%;height: 80px;
+            background: yellow;
+        }
+        ul{
+            width: 100%;height: 100%;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+        li{
+            width: 100%;padding: 20px;
+            background: coral;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="head">
+            head 顶都 顶部
+        </div>
+        <div class="content">
+            <ul>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+                <li>1111</li>
+            </ul>
+            <div class="foot">
+                <div class="foot-box">
+                    底部内容
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
+
+<script>
+    // 判断是否是会员
+    function isMember(param,cb) {
+        if(param){
+            // 会员
+            cb(1)
+        }else{
+            cb(2)
+        }
+    }
+
+
+    isMember(1,data=>{
+
+        if(data){
+            // 是会员
+            console.log(data)
+        }else{
+            // 不是会员
+            console.log(data)
+        }
+        
+    })
+</script>
